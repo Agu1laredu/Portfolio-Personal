@@ -213,5 +213,8 @@ footer li {
     .row{
       width: 90%
     }
+    img{
+      opacity: 1;
+    }
 };
 };
