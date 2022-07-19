@@ -77,10 +77,32 @@ li {
 h1,
 h5,
 h2 {
+  margin: auto;
   object-fit: cover;
   text-align: center;
   font-family: "Rubik Moonrocks", cursive;
 }
+.divh2 {
+  display: flex;
+  margin: auto; 
+}
+.tipeo{
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 25ch;
+
+  animation: typing 10s steps(25) infinite,
+  blink .5s infinite step-end alternate ;
+   overflow:hidden;
+}
+
+@keyframes typing {
+  from { width: 0}
+};
+@keyframes blink {
+  50% {border-color: transparent}
+}
+
 .parrafo {
   display: flex;
   margin: auto;
