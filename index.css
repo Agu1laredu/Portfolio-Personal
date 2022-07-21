@@ -112,11 +112,12 @@ h2 {
   height: 80px;
 }
 .parrafo p {
-  margin-top: 20%;
+  margin-top: 30%;
   font-size: 25px;
   color: rgb(58, 53, 58);
 }
 p {
+  max-width: 700px;
   margin-left: 32%;
   margin-right: 32%;
   font-family: "Anton", sans-serif;
@@ -124,69 +125,139 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* SECTION TRABAJOS */
 
-
-img {
-  border-radius: 10px 10px 0px 0px;
-  width: 100%;
-  opacity: 0.5;
-}
-img:hover {
-  opacity: 1;
-  transform: translateY(-6%);
-  cursor: pointer;
-}
-.card {
-  border-radius: 15px 15px 0px 0px;
-  width: 50%;
-  display: grid;
-  align-items: center;
-  align-content: center;
+#portfolio {
+  max-width: 1100px;
+  padding: 100px 0;
   margin: auto;
 }
 
-.repositorio {
-  color: black;
-  font-size: 40px;
-  text-decoration: none;
-  list-style: none;
-  font-family: "Anton", sans-serif;
+#portfolio .titulo-seccion {
+  text-align: center;
+  font-size:  22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness:  5px;
 }
-.repositorio:hover {
-  color: rgba(0, 0, 171, 0.751);
+
+#portfolio .fila {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+#portfolio .fila .proyecto{
+  max-width:  450px;
+  border: 1px solid #000;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#portfolio .fila .proyecto img{
+  width: 100%;
+  height: 100%;
+  filter:  grayscale(1);
+  object-fit: cover;
+  transition: .5s;
+  
+  
+}
+
+#portfolio .fila .proyecto img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+}
+
+#portfolio .fila .proyecto .info{
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, .8);
+  color: #ff5080;
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  bottom: -40px;
+  transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover .info{
+  opacity:  1;
+  bottom: 0;
+  cursor: pointer;
 }
 
 /*FIN  SECTION TRABAJOS */
-
+ */
 
 
 
 
 /* FORMULARIO */
 
-.formulario{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  font-family: "Anton", sans-serif;
-}
-.formulario #floatingTextarea2{
-  margin-bottom: 2%;
+#contacto {
+  padding:  100px 15px;
 }
 
-.formulario .btn {
-  margin: auto;
-  border: 2px solid black;
-  padding: 5px;
-}
-.row {
-  border: 2px solid rgba(95, 93, 93, 0.165);
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  width: 50%;
+#contacto .titulo-seccion {
+  margin-bottom: 20px;
   text-align: center;
+  font-size:  22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+#contacto .contenedor-form .fila {
+  margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad {
+  display: flex;
+  justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+  padding: 20px;
+  border-radius:  20px;
+  border: none;
+  border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .mitad input{
+  width: 48%;
+}
+
+#contacto .contenedor-form .input-full{
+  width: 100%;
+}
+
+
+#contaacto .btn-enviar{
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition:  .5s;
+  padding:  10px 15px;
+}
+
+#contacto .btn-enviar:hover {
+  background-color:rgba(21, 14, 230, 0.796) ;
+  color: white;
 }
 
 /*FIN  FORMULARIO */
@@ -235,8 +306,9 @@ footer li {
     .row{
       width: 90%
     }
-    img{
-      opacity: 1;
+    
+#portfolio .fila .proyecto img{
+      filter: grayscale(0);
     }
     .divh2 {
       width: 318px
