@@ -4,6 +4,60 @@
 body {
   margin: 0;
   padding: 0;
+  transition: 0.5s;
+}
+body.active {
+  background-color: #212020;
+  color: #fff;
+}
+body.active p,h2,h3,h4,h5 ,i  {
+  color: #fff;
+}
+body.active a  {
+  color: #fff;
+}
+body.active a:hover {
+  color: #fff;
+}
+body.active h3  {
+  color: #fff;
+}
+
+
+#toggle{
+  z-index: 1;
+  position: absolute;
+  left: 90%;
+  right: 10%;
+  top: 4%;
+  width: 100px;
+  height: 40px;
+  border-radius:  160px;
+  background: #222;
+  transition:  0.5s;
+  cursor: pointer;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+              inset 0 8px 8px rgba(0, 0, 0, 0.1),
+              inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+#toggle.active{
+  background: #fff;
+}
+#toggle .indicator {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background:  linear-gradient(to bottom, #444, #222);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+             inset 0 4px 4px rgba(255,255,255,02),
+             inset 0 -4px 4px rgba(255,255,255,02);
+  transition: 0.5s;
+}
+
+#toggle.active .indicator {
+  left: 60px;
 }
 
 li a{
@@ -354,6 +408,31 @@ footer li {
   .card {
     width: 90%;
   }
+  #toggle{
+    top: 2%;
+    left: 40%;
+    right: 70%;
+  }
+  #portfolio .fila .proyecto img{
+    filter: grayscale(0);
+  }
+  .divh2 {
+    width: 318px
+  }
+  .tegnologias{
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    justify-items: center;
+  }
+  .tegnologias div p {
+   font-size: 40px;
+  }
+  #toggle{
+    top: 2%;
+    left: 40%;
+    right: 40%;
+  }
   @media (max-width: 500px) {
     .parrafo {
       margin-top: 10%
@@ -376,6 +455,11 @@ footer li {
     }
     .tegnologias div p {
      font-size: 40px;
+    }
+    #toggle{
+      top: 2%;
+      left: 40%;
+      right: 40%;
     }
     
 };

@@ -34,15 +34,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Personal</title>
   </head>
-  <body>
+  <body id="body">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid" id="Inicio">
-        <a
-          target="_blank"
-          class="navbar-brand"
-          href="https://www.linkedin.com/in/eduardo-aguilar-91a658219/"
-          ><span>A</span><span>E</span></a
-        >
+        <a  target="_blank"  class="navbar-brand"><span>A</span><span>E</span></a >
         <button
           class="navbar-toggler"
           type="button"
@@ -63,7 +58,11 @@
           </ul>
         </div>
       </div>
+      
     </nav>
+    <div id="toggle">
+      <i class="indicator"></i>
+    </div>
     <main>
       <div class="section">
         <section>
@@ -184,9 +183,9 @@
   </div>
     </section>
    
-
+    <h2 class="titulo-seccion" style="margin-top: 5%;">Contactanos ahora</h2>
     <section id="contacto">
-      <h3 class="titulo-seccion">Contactanos ahora</h3>
+      
       <div class="contenedor-form">
         <form action="">
           <div class="fila mitad">
@@ -243,7 +242,7 @@
         >
       </li>
     </footer>
-
+    <script src="darkmode.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
