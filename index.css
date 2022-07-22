@@ -297,9 +297,13 @@ h4 span{
   width: 100%;
 }
 
-
+.boton{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 2%;
+}
 #contaacto .btn-enviar{
-  display: block;
   margin: auto;
   cursor: pointer;
   transition:  .5s;
