@@ -204,7 +204,22 @@ p {
 
 
 /* TEGNOLOGIAS */
-
+.tech{
+  background: rgb(131, 131, 134);
+  background: linear-gradient(
+    130deg,
+    rgba(131, 131, 134, 0.9587185215883228) 0%,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(112, 103, 112, 1) 0%,
+    rgba(9, 9, 9, 1) 0%,
+    rgba(20, 14, 230, 1) 53%,
+    rgba(249, 249, 249, 1) 99%,
+    rgb(253, 253, 253) 100%,
+    rgba(232, 2, 223, 0) 100%
+  );
+  border: 2px solid rgb(0, 0, 0);
+  padding: 5%;
+}
 
 .tegnologias div {
   display: flex;
@@ -219,6 +234,10 @@ h4{
   text-align: center;
   font-family: 'Stint Ultra Expanded', cursive;
 }
+h4 span{
+  color: rgb(207, 205, 205);
+  font-family: 'Stint Ultra Expanded', cursive;
+}
 .tegnologias div p {
   margin: 4%;
   text-align: center;
@@ -227,6 +246,7 @@ h4{
 
 .tegnologias div p:hover {
   cursor: pointer;
+ 
 }
 
 /* TEGNOLOGIAS */
