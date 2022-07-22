@@ -205,6 +205,8 @@ p {
 
 /* TEGNOLOGIAS */
 .tech{
+  margin: auto;
+  width: 90%;
   background: rgb(131, 131, 134);
   background: linear-gradient(
     130deg,
