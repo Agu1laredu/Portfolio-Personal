@@ -4,13 +4,13 @@
 body {
   margin: 0;
   padding: 0;
-  transition: 0.5s;
+  transition: 0.9s;
 }
 body.active {
   background-color: #212020;
   color: #fff;
 }
-body.active p,h2,h3,h4,h5 ,i  {
+body.active p,h2,h3,h4,h5  {
   color: #fff;
 }
 body.active a  {
@@ -389,6 +389,7 @@ footer li {
   list-style: none;
   font-size: 50px;
 }
+
 
 @media (max-width: 800px) {
   p {
