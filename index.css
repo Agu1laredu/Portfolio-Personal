@@ -207,6 +207,7 @@ p {
 .tech{
   margin: auto;
   width: 90%;
+  border-radius: 40px;
   background: rgb(131, 131, 134);
   background: linear-gradient(
     130deg,
