@@ -59,8 +59,8 @@ span {
 /* FIN LOGOTIPO */
 
 li {
-  margin: 10%;
-  font-size: 20px;
+  margin: 5%;
+  font-size: 25px;
   cursor: pointer;
   font-family: "Rubik Moonrocks", cursive;
 }
@@ -110,6 +110,7 @@ h2 {
   align-content: center;
   text-align: center;
   height: 80px;
+  
 }
 .parrafo p {
   margin-top: 30%;
