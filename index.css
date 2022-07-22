@@ -117,11 +117,11 @@ h2 {
   color: rgb(58, 53, 58);
 }
 p {
+  font-family: 'Stint Ultra Expanded', cursive;
   width: 700px;
   margin-left: 32%;
   margin-right: 32%;
-  font-family: "Anton", sans-serif;
-  color: rgb(58, 53, 58);
+  color: rgb(86, 80, 86);
 }
 
 
@@ -200,8 +200,35 @@ p {
 }
 
 /*FIN  SECTION TRABAJOS */
- */
 
+
+/* TEGNOLOGIAS */
+
+
+.tegnologias div {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 100%;
+  
+}
+h4{
+  text-align: center;
+  font-family: 'Stint Ultra Expanded', cursive;
+}
+.tegnologias div p {
+  margin: 4%;
+  text-align: center;
+  font-size: 120px;
+}
+
+.tegnologias div p:hover {
+  cursor: pointer;
+}
+
+/* TEGNOLOGIAS */
 
 
 
@@ -313,5 +340,15 @@ footer li {
     .divh2 {
       width: 318px
     }
+    .tegnologias{
+      display: grid;
+      margin: auto;
+      justify-content: center;
+      justify-items: center;
+    }
+    .tegnologias div p {
+     font-size: 40px;
+    }
+    
 };
 };
